@@ -1,0 +1,30 @@
+<h2>Course List</h2>
+
+<input type="text" [(ngModel)]="searchTerm" (input)="filterByTerm()"  placeholder="Filter by Course Code or Name">
+<select [(ngModel)]="selectedSubject" (change)="filterByTerm()">
+  <option value="all">All Subjects</option>
+  <option *ngFor="let subject of subjects" [value]="subject">{{ subject }}</option>
+</select>
+
+<p>Results: {{ resultCount }} / {{ totalCourses }}</p>
+<table class="course-table">
+  <thead>
+    <tr>
+      <th (click)="sortData('courseCode')">Course Code</th>
+      <th (click)="sortData('courseName')">Course Name</th>
+      <th (click)="sortData('points')">Points</th>
+      <th (click)="sortData('subject')">subject</th>
+      <th>Syllabus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of filteredCourses">
+      <td>{{ course.courseCode }}</td>
+      <td>{{ course.courseName }}</td>
+      <td>{{ course.points }}</td>
+      <td>{{ course.subject }}</td>
+      <td><a [href]="course.syllabus" target="_blank">Syllabus</a></td>
+      <td><button (click)="addToSchedule(course)">Add to Schedule</button></td>
+    </tr>
+  </tbody>
+</table>

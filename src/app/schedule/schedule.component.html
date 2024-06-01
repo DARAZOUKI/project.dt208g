@@ -1,0 +1,17 @@
+<h2>Schedule</h2>
+
+<div *ngIf="selectedCourses.length === 0">
+  <p>No courses added to schedule.</p>
+</div>
+
+<div *ngIf="selectedCourses.length > 0">
+  <p>Total Courses: {{ selectedCourses.length }}</p>
+  <p>Total Points: {{ totalPoints }}</p>
+  <ul class="course-list">
+    <li *ngFor="let course of selectedCourses" class="course-item">
+      <span>{{ course.courseCode }} - {{ course.courseName }}</span>
+      <span>{{ course.points }} points</span>
+      <button (click)="removeFromSchedule(course)">Remove</button>
+    </li>
+  </ul>
+</div>

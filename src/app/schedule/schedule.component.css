@@ -1,0 +1,31 @@
+/* Styling for the course list */
+.course-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course-item span {
+    flex: 1;
+  }
+  
+  .course-item button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ee9561;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .course-item button:hover {
+    background-color: #d4ad60;
+  }
+  
