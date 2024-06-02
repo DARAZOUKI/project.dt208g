@@ -27,6 +27,9 @@
   h2{
     text-align: center;
   }
+  h3{
+    text-align: justify;
+  }
   .course-item button:hover {
     background-color: #d4ad60;
   }

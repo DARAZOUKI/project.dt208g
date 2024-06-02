@@ -9,6 +9,7 @@
   <p>Total Courses: {{ selectedCourses.length }}</p>
   <p>Total Points: {{ totalPoints }}</p>
   <ul class="course-list">
+    <h3>My schedule</h3>
     <li *ngFor="let course of selectedCourses" class="course-item">
       <span>{{ course.courseCode }} - {{ course.courseName }}</span>
       <span>{{ course.points }} points</span>
