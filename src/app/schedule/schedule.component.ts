@@ -44,4 +44,6 @@ export class ScheduleComponent implements OnInit {
   private calculateTotalPoints(): void {
     this.totalPoints = this.selectedCourses.reduce((total, course) => total + course.points, 0);
   }
+  
 }
+

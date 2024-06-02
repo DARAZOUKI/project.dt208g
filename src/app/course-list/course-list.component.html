@@ -1,10 +1,12 @@
-<h2>Course List</h2>
+<div class="animated-element"><h2>Course List</h2></div>
 
+<div class="filter-container">
 <input type="text" [(ngModel)]="searchTerm" (input)="filterByTerm()"  placeholder="Filter by Course Code or Name">
 <select [(ngModel)]="selectedSubject" (change)="filterByTerm()">
   <option value="all">All Subjects</option>
   <option *ngFor="let subject of subjects" [value]="subject">{{ subject }}</option>
 </select>
+</div>
 
 <p>Results: {{ resultCount }} / {{ totalCourses }}</p>
 <table class="course-table">

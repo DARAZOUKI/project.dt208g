@@ -24,8 +24,16 @@
     border: none;
     cursor: pointer;
   }
-  
+  h2{
+    text-align: center;
+  }
   .course-item button:hover {
     background-color: #d4ad60;
   }
-  
+  .animated-element {
+    animation: fadeInOut 0.5s ease; /* Apply animation */
+  }
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

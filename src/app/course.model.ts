@@ -1,3 +1,5 @@
+
+//course.model.ts
 export interface Course {
     courseCode: string;
     subjectCode: string;
