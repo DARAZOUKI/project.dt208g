@@ -1,0 +1,22 @@
+# Course Schedule App
+This project is an Angular application designed to help students search for courses and create their own course schedules. It was developed as part of a fictional academic institution's website.
+## Features
+
+    * Course Search: Users can search for courses by course code or course name.
+    * Filtering and Sorting: Courses can be filtered and sorted based on various criteria such as course code, course name, points, and subject.
+    * Subject Filtering: Users can filter courses by subject, allowing them to narrow down their search results.
+    * Schedule Management: Users can add courses to their personal schedule and view the total number of credits for the selected courses.
+    * Responsive Design: The application is designed to work well on both desktop and mobile devices.
+
+## Requirements
+
+The application must meet the following requirements:
+
+  *  Developed using Angular and TypeScript.
+  * Implementation of at least two subpages: one for course search and display, and one for displaying the user's schedule.
+  * Usage of components and routing.
+  * Creation of at least two services: one for course data and one for managing the schedule.
+  * Saving the user's schedule using LocalStorage.
+  * Responsive design that works well on various screen sizes.
+  * Version control using Git.
+  * Deployment to a publicly accessible web host.
